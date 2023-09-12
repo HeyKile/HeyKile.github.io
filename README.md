@@ -1,2 +1,2 @@
-# heykile.github.io
+# HeyKile.github.io
 Repository for my personal website
