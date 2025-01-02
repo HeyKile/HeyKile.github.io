@@ -1,0 +1,36 @@
+.app-header {
+  background-color: #222831;
+  color: white;
+  text-align: left;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-header-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+
+.app-header-name {
+  font-size: calc(20px + 2vmin);
+  font-weight: bold;
+}
+
+.app-header-intro-text {
+  font-size: calc(10px + 2vmin);
+}
+
+.app-header-right-content {
+  
+}
+
+.app-header-image-container {
+  align-self: center;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+}
