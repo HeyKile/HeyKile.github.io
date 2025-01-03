@@ -5,32 +5,36 @@
   width: 100%;
   padding: 50px;
   display: flex;
-  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .app-header-left-content {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   text-align: left;
+  max-width: 40%;
+  font-size: 2vw;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .app-header-name {
-  font-size: calc(20px + 2vmin);
+  font-size: 2.2em;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .app-header-intro-text {
-  font-size: calc(10px + 2vmin);
+  font-size: .85em;
+  margin: 0;
 }
 
 .app-header-right-content {
-  
-}
-
-.app-header-image-container {
-  align-self: center;
-  width: 350px;
-  height: 350px;
-  overflow: hidden;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }

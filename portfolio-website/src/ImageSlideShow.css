@@ -1,8 +1,13 @@
 .image-slide-show-container {
   display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.image-slide-show-container-inner {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
 }
 
 .image-dot {
@@ -16,8 +21,45 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .image-dot:hover {
+.active-dot, .image-dot:hover {
   background-color: #297fff;
   height: 14px;
   width: 14px;
+}
+
+.image-button-prev, .image-button-next {
+  height: fit-content;
+  font-size: large;
+  background: none;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-button-prev {
+  left: 20px;
+}
+
+.image-button-next {
+  right: 20px;
+}
+
+.image-slide-show-container:hover .image-button-prev,
+.image-slide-show-container:hover .image-button-next {
+  opacity: 1;
+}
+
+.app-image {
+  width: 40vw;
+  height: 28vw;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.app-image.active {
+  opacity: 1;
 }
