@@ -1,0 +1,99 @@
+.personal-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.personal-projects-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70vw;
+}
+
+.personal-projects-title {
+  margin-bottom: 0;
+}
+
+.personal-projects-subtext {
+  text-align: center;
+}
+
+.project-cards-container {
+  display: grid;
+  padding-top: 10px;
+}
+
+@media (min-width: 1700px) {
+  .project-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1700px) {
+  .project-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .project-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card {
+  width: 520px;
+  height: 260px;
+  border: 2.5px solid white;
+  border-radius: 8px;
+  margin: 5px 10px;
+  box-shadow: 4px 2px 2px darkgrey;
+  background-color: transparent;
+  text-align: left;
+  color: white;
+}
+
+.project-card-content {
+  padding: 0px 15px;
+  display: flex;
+}
+
+.project-card-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-right: 5px;
+}
+
+.project-card-name {
+  color: white;
+  font-size: 3.6em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.project-card-subtext {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.project-card-technologies {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.project-thumbnail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-thumbnail {
+  width: 220px;
+}

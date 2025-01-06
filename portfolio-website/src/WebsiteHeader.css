@@ -3,12 +3,8 @@
   color: white;
   text-align: left;
   width: 100%;
-  padding: 50px;
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: fit-content;
 }
 
 .app-header-left-content {
@@ -18,8 +14,10 @@
   text-align: left;
   max-width: 40%;
   font-size: 2vw;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 
 .app-header-name {
@@ -37,4 +35,13 @@
   flex-grow: 1;
   display: flex;
   justify-content: center;
+}
+
+.transparent-gradient {
+  background: linear-gradient(
+    to bottom, 
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.1)
+  );
+  border-radius: 0px 10px 10px 0px;
 }

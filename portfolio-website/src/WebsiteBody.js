@@ -1,18 +1,25 @@
 import React from 'react';
 import { useState } from 'react';
+import './WebsiteBody.css';
+import config from './config/personal-projects.json';
+import PersonalProjects from './PersonalProjects';
 
 function WebsiteBody() {
 
   const tabButtons = [
     'About Me',
     'Projects',
-    'Work Experience'
+    'Work Experience',
+    'Contacts'
   ];
+
   const tabs = [
     <p>About me bro</p>,
-    <p>Projects bro</p>,
-    <p>Work bro</p>
+    <PersonalProjects projects={config.projects} />,
+    <p>Work bro</p>,
+    <p>Contacts bro</p>
   ];
+
   const [tab, setTab] = useState(0);
 
   return (
@@ -29,7 +36,7 @@ function WebsiteBody() {
         ))}
       </div>
       <div className='website-body-content'>
-        {tab < tabs.length && tabs[tab]}
+        {tab >= 0 && tab < tabs.length && tabs[tab]}
       </div>
     </div>
   );
