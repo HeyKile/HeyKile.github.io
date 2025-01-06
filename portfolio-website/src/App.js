@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import WebsiteHeader from './WebsiteHeader';
 import WebsiteBody from './WebsiteBody';

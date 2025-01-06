@@ -4,14 +4,13 @@ import './PersonalProjects.css';
 function PersonalProjects({ projects }) {
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [curProject, setCurProject] = useState(null);
   
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  
 
   return (
     <div className='personal-projects-container'>
@@ -27,7 +26,7 @@ function PersonalProjects({ projects }) {
                   <button
                     key={index}
                     className='project-card'
-                    onClick={() => console.log(project.name)}
+                    onClick={() => setCurProject(project)}
                   >
                     <div className='project-card-content'>
                       <div className='project-card-text'>
