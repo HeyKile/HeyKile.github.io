@@ -5,13 +5,64 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  transition: 0.5s;
+  transform: translateX(100%);
+  transition: transform 0.25s ease-in-out;
 }
 
 .detail-pane.open {
-  display: block;
+  transform: translateX(0);
 }
 
 .detail-pane.close {
-  display: none;
+  transform: translateX(100%);
+}
+
+.detail-pane-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-pane-header {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.project-title-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.project-title {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: bold;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.project-subtext {
+  font-style: italic;
+}
+
+.project-technologies {
+  font-size: clamp(.75rem, 1.5vw, 1.5rem);
+  font-style: italic;
+}
+
+.detail-pane-close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  cursor: pointer;
+  max-width: fit-content;
+  align-self: right;
+  padding-right: 15px;
+}
+
+.detail-pane-close-button:hover {
+  color: #cccccc;
 }
