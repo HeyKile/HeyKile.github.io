@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  position: relative;
 }
 
 .personal-projects-info {

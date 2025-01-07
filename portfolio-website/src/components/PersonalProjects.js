@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './PersonalProjects.css';
+import DetailPane from './DetailPane';
 
 function PersonalProjects({ projects }) {
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [curProject, setCurProject] = useState(null);
+  const [openDetail, setOpenDetail] = useState(false);
   
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
@@ -12,8 +14,16 @@ function PersonalProjects({ projects }) {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useEffect(() => {
+    setOpenDetail(curProject !== null);
+  }, [curProject]);
+
   return (
     <div className='personal-projects-container'>
+      <DetailPane
+        project={curProject} 
+        setProject={setCurProject}
+      />
       <div className='personal-projects-info'>
         <h2 className='personal-projects-title'>Personal Projects</h2>
         <p className='personal-projects-subtext'>Here is a list of personal projects I've completed over the last few years. Click on each to learn more. Enjoy!</p>
@@ -65,7 +75,7 @@ function PersonalProjects({ projects }) {
                   </button>
                 );
               })
-            : <p>No personal projects! Unfortunate and not true...</p>
+            : <p>No personal projects! Unfortunate and not true...</p> // should never happen lol
         }
       </div>
       <p>Screen width: {screenWidth}</p>
