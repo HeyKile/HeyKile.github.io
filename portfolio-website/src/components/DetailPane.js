@@ -10,7 +10,7 @@ export default function DetailPane({ project, setProject }) {
           {project !== null &&
             <div className='project-title-container'>
               <p className='project-title'>{project.name}: <text className='project-subtext'>{project.subtext}</text></p>
-              <text className='project-technologies'>({project.technologies &&  project.technologies.join(" | ")})</text>
+              <text className='project-technologies'>({project.technologies && project.technologies.join(" | ")})</text>
             </div>
           }
           <button className='detail-pane-close-button' onClick={() => setProject(null)}>
