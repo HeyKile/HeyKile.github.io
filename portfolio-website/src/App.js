@@ -1,6 +1,6 @@
 import './App.css';
-import WebsiteHeader from './WebsiteHeader';
-import WebsiteBody from './WebsiteBody';
+import WebsiteHeader from './components/WebsiteHeader';
+import WebsiteBody from './components/WebsiteBody';
 
 function App() {
   return (

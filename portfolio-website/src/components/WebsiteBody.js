@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './WebsiteBody.css';
-import config from './config/personal-projects.json';
+import config from '../config/personal-projects.json';
 import PersonalProjects from './PersonalProjects';
 
 function WebsiteBody() {
