@@ -56,7 +56,7 @@
   background: none;
   border: none;
   color: white;
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.2rem);
   cursor: pointer;
   max-width: fit-content;
   align-self: baseline;

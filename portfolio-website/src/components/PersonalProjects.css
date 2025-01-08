@@ -49,10 +49,22 @@
 .project-card {
   width: 520px;
   height: 260px;
-  border: 2.5px solid white;
+  border: 2.5px solid #2c2c2c;
   border-radius: 8px;
   margin: 5px 10px;
-  box-shadow: 4px 2px 2px darkgrey;
+  box-shadow: 2px 2px 2px #252525;
+  background-color: #2c2c2c;
+  text-align: left;
+  color: white;
+}
+
+.project-card:hover {
+  width: 520px;
+  height: 260px;
+  border: 2.5px solid rgb(46, 112, 253);
+  border-radius: 8px;
+  margin: 5px 10px;
+  box-shadow: 4px 2px 2px rgb(96, 147, 255);
   background-color: transparent;
   text-align: left;
   color: white;

@@ -1,5 +1,4 @@
 .app-header {
-  background-color: #222831;
   color: white;
   text-align: left;
   width: 100%;
@@ -40,8 +39,8 @@
 .transparent-gradient {
   background: linear-gradient(
     to bottom, 
-    rgba(0, 0, 0, 0.5), 
-    rgba(0, 0, 0, 0.1)
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.2)
   );
   border-radius: 0px 10px 10px 0px;
 }
