@@ -59,7 +59,7 @@
   font-size: clamp(1.5rem, 3vw, 2rem);
   cursor: pointer;
   max-width: fit-content;
-  align-self: right;
+  align-self: baseline;
   padding-right: 15px;
 }
 

@@ -6,13 +6,14 @@
   align-items: center;
   color: white;
   padding-top: 5px;
-  max-height: none;
 }
 
 .website-body-buttons {
   display: flex;
   align-items: center;
-  max-width: 90%;
+  max-width: 95%;
+  margin-top: .5vh;
+  margin-bottom: .5vh;
 }
 
 .body-button, .body-button--selected {

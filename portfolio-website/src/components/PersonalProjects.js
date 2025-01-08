@@ -78,7 +78,6 @@ function PersonalProjects({ projects }) {
             : <p>No personal projects! Unfortunate and not true...</p> // should never happen lol
         }
       </div>
-      <p>Screen width: {screenWidth}</p>
     </div>
   );
 }

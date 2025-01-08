@@ -6,37 +6,30 @@ import PersonalProjects from './PersonalProjects';
 
 function WebsiteBody() {
 
-  const tabButtons = [
-    'About Me',
-    'Projects',
-    'Work Experience',
-    'Contacts'
-  ];
-
   const tabs = [
-    <p>About me bro</p>,
-    <PersonalProjects projects={config.projects} />,
-    <p>Work bro</p>,
-    <p>Contacts bro</p>
+    { label: 'About Me', content: <p>About me bro</p> },
+    { label: 'Projects', content: <PersonalProjects projects={config.projects} /> },
+    { label: 'Work Experience', content: <p>Work bro</p> },
+    { label: 'Contacts', content: <p>Contacts bro</p> },
   ];
 
-  const [tab, setTab] = useState(0);
+  const [tab, setTab] = useState(1);
 
   return (
     <div className='website-body'>
       <div className='website-body-buttons'>
-        {tabButtons.map((label, index) => (
+        {tabs.map((curTab, index) => (
           <button
             key={index}
             className={`body-button${tab === index ? '--selected' : ''}`}
             onClick={() => setTab(index)}
           >
-            {label}
+            {curTab.label}
           </button>
         ))}
       </div>
       <div className='website-body-content'>
-        {tab >= 0 && tab < tabs.length && tabs[tab]}
+        {tab >= 0 && tab < tabs.length && tabs[tab].content}
       </div>
     </div>
   );

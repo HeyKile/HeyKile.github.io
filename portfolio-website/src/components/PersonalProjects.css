@@ -4,6 +4,8 @@
   align-items: center;
   width: 100vw;
   position: relative;
+  overflow: hidden;
+  min-height: 80vh;
 }
 
 .personal-projects-info {
