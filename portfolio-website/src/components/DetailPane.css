@@ -41,10 +41,12 @@
   font-weight: bold;
   margin: 0;
   flex-grow: 1;
+  color: rgb(96, 147, 255);
 }
 
 .project-subtext {
   font-style: italic;
+  color: rgb(96, 147, 255);
 }
 
 .project-technologies {
@@ -65,4 +67,8 @@
 
 .detail-pane-close-button:hover {
   color: #cccccc;
+}
+
+.detail-pane-body {
+  
 }

@@ -42,9 +42,9 @@ function PersonalProjects({ projects }) {
                       <div className='project-card-text'>
                         <p className='project-card-name'>{project.name}</p>
                         <p className='project-card-subtext'>{project.subtext}</p>
-                        <p className='project-card-technologies'>
+                        {/* <p className='project-card-technologies'>
                           {project.technologies && project.technologies.join(" | ")}
-                        </p>
+                        </p> */}
                         {/* <div className='project-card-contributors-container'>
                           {project.contributors && project.contributors.map((contributor, index) => {
                             return (

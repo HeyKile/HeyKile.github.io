@@ -41,7 +41,7 @@ function WebsiteHeader() {
     >
       <div className='app-header-left-content transparent-gradient'>
         <h1 className='app-header-name'>Kyle Bello</h1>
-        <p className='app-header-intro-text'>Software Engineer | Pitt CS Alumn | Goat</p>
+        <p className='app-header-intro-text'>Software Engineer | Pitt CS Alumn | Cool Guy</p>
       </div>
       <div className='app-header-right-content'>
         {/* <ImageSlideShow images={images} /> */}

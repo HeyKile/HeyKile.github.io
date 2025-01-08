@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ImageSlideShow from './ImageSlideShow';
+import { toAssetUrl } from '../utils/utils';
 import './DetailPane.css';
 
 export default function DetailPane({ project, setProject }) {
@@ -18,6 +20,7 @@ export default function DetailPane({ project, setProject }) {
           </button>
         </div>
         <div className='detail-pane-body'>
+          {project && <ImageSlideShow images={toAssetUrl(project.screenshotUrls)} />}
         </div>
       </div>
     </div>
