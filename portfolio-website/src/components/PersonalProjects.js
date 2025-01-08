@@ -42,26 +42,6 @@ function PersonalProjects({ projects }) {
                       <div className='project-card-text'>
                         <p className='project-card-name'>{project.name}</p>
                         <p className='project-card-subtext'>{project.subtext}</p>
-                        {/* <p className='project-card-technologies'>
-                          {project.technologies && project.technologies.join(" | ")}
-                        </p> */}
-                        {/* <div className='project-card-contributors-container'>
-                          {project.contributors && project.contributors.map((contributor, index) => {
-                            return (
-                              <>
-                                <a
-                                  key={index}
-                                  className='contributor-link'
-                                  href={contributor.githubLink}
-                                  target='_blank'
-                                  rel='noopener noreferrer'
-                                >
-                                  {contributor.name}
-                                </a>{index === project.contributors.length - 1 ? '' : ', '}
-                              </>
-                            );
-                          })}
-                        </div> */}
                       </div>
                       {project.thumbnailUrl && 
                         <div className='project-thumbnail-container'>

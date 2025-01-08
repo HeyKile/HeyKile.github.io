@@ -1,12 +1,13 @@
 .detail-pane {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #121212;
   transform: translateX(100%);
   transition: transform 0.25s ease-in-out;
+  overflow-y: auto;
 }
 
 .detail-pane.open {
@@ -20,13 +21,17 @@
 .detail-pane-content {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+  padding-bottom: 2rem;
 }
 
 .detail-pane-header {
   display: flex;
   justify-content: right;
-  width: 100%;
-  padding-top: 8px;
+  padding-top: 5px;
+  background-color: #2c2c2c;
+  padding-bottom: 8px;
+  box-shadow: 0px 2px 2px #252525;
 }
 
 .project-title-container {
@@ -36,21 +41,33 @@
   padding-left: 20px;
 }
 
-.project-title {
-  font-size: clamp(2rem, 4vw, 4rem);
+.detail-pane-project-title {
+  font-size: clamp(1.4rem, 4vw, 3rem);
   font-weight: bold;
   margin: 0;
   flex-grow: 1;
   color: rgb(96, 147, 255);
 }
 
-.project-subtext {
+.detail-pane-project-subtext {
   font-style: italic;
   color: rgb(96, 147, 255);
 }
 
+.project-contributors {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  color: white;
+}
+
+.contributor-link {
+  color: white;
+  font-style: italic;
+}
+
 .project-technologies {
-  font-size: clamp(.75rem, 1.5vw, 1.5rem);
+  font-size: clamp(.75rem, 1.5vw, 1.3rem);
   font-style: italic;
 }
 
@@ -58,11 +75,12 @@
   background: none;
   border: none;
   color: white;
-  font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+  font-size: clamp(1.8rem, 6vw, 3rem);
   cursor: pointer;
   max-width: fit-content;
-  align-self: baseline;
-  padding-right: 15px;
+  align-self: center;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
 }
 
 .detail-pane-close-button:hover {
@@ -70,5 +88,70 @@
 }
 
 .detail-pane-body {
-  
+  display: flex;
+  align-items: center;
+  padding-top: 5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.detail-pane-image-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding-bottom: 10px;
+}
+
+.detail-pane-project-description-container {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.detail-pane-project-description-header {
+  color: rgb(96, 147, 255);
+  font-weight: bold;
+  font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+  margin: 0;
+}
+
+.detail-pane-project-description-text {
+  font-size: clamp(.8rem, 1.8vw, 2rem);
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .detail-pane-body {
+    flex-direction: column;
+  }
+
+  .detail-pane-project-description-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail-pane-project-description-header {
+    font-size:1.5em;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .detail-pane-project-description-text {
+    font-size: 1.2em;
+  }
+}
+
+/* desktop */
+@media (min-width: 767px) {
+  .detail-pane-header {
+    padding-left: 8px;
+  }
+
+  .detail-pane-body {
+    flex-direction: row;
+  }
+
+  .detail-pane-image-container {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
 }

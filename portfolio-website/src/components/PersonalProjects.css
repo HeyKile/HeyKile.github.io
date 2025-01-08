@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   min-height: 80vh;
+  max-height: fit-content;
 }
 
 .personal-projects-info {

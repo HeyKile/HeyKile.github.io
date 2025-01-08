@@ -53,8 +53,8 @@
 }
 
 .app-image {
-  width: 40vw;
-  height: 28vw;
+  min-height: 350px;
+  max-height: 60vh;
   object-fit: contain;
   opacity: 0;
   transition: opacity 1s ease-in-out;
