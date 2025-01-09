@@ -95,6 +95,7 @@
   padding-top: 5vh;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 5vh;
 }
 
 .detail-pane-image-container {
@@ -114,10 +115,15 @@
   font-weight: bold;
   font-size: clamp(1.8rem, 3.5vw, 2.2rem);
   margin: 0;
+  border-bottom: .2rem solid rgb(96, 147, 255);
+  max-width: fit-content;
+  padding-bottom: .1rem;
+  padding-top: 1%;
 }
 
 .detail-pane-project-description-text {
   font-size: clamp(.8rem, 1.8vw, 2rem);
+  margin-top: 1%;
 }
 
 /* mobile */
@@ -156,4 +162,37 @@
     padding-left: 8vw;
     padding-right: 8vw;
   }
+}
+
+.detail-pane-repo-link {
+  display: inline-flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(96, 147, 255);
+  border: .2rem solid rgb(46, 112, 253);
+  border-radius: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  padding: 0 1rem;
+}
+
+.detail-pane-repo-link:hover {
+  transform: scale(1.05);
+  background-color: rgb(46, 112, 253);
+}
+
+.detail-pane-repo-label {
+  font-size: clamp(1.1rem, 1.6vw, 1.8rem);
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+
+.detail-pane-repo-link-icon{
+  font-size: 2vw;
+  margin-right: 5%;
+  max-width: fit-content;
 }

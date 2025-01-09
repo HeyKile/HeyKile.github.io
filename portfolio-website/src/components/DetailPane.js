@@ -27,9 +27,6 @@ export default function DetailPane({ project, setProject }) {
                   );
                 })}</p>
               }
-              {project.technologies && project.technologies.length > 0 &&
-                <a className='project-technologies'>Technologies: {project.technologies && project.technologies.join(", ")}</a>
-              }
             </div>
           }
           <button className='detail-pane-close-button' onClick={() => setProject(null)}>
@@ -42,13 +39,34 @@ export default function DetailPane({ project, setProject }) {
               <ImageSlideShow images={toAssetUrl(project.screenshotUrls)} />
             }
           </div>
-          <div className='detail-pane-project-description-container'>
-            <p className='detail-pane-project-description-header'>Description</p>
-            {project !== null && 
-              <p className='detail-pane-project-description-text'>{project.description}</p>
-            }
-          </div>
+          {project &&
+            <div className='detail-pane-project-description-container'>
+              {project.technologies && project.technologies.length > 0 &&
+                <p className='detail-pane-project-description-header'>Technologies</p>
+              }
+              {project.technologies && project.technologies.length > 0 &&
+                <a className='detail-pane-project-description-text'>{project.technologies.join(", ")}</a>
+              }
+              {project.description &&
+                <p className='detail-pane-project-description-header'>Description</p>
+              }
+              {project.description &&
+                <p className='detail-pane-project-description-text'>{project.description}</p>
+              }
+            </div>
+          }
         </div>
+        {project && project.repoUrl &&
+          <a
+            className='detail-pane-repo-link'
+            href={project.repoUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <h4 className='detail-pane-repo-label'>View Repository</h4>
+            <i className="fas fa-arrow-right detail-pane-repo-link-icon"></i>
+          </a>
+        }
       </div>
     </div>
   );
