@@ -79,6 +79,7 @@
   color: rgb(96, 147, 255);
   max-width: 90%;
   font-size: 4vw;
+  font-size: clamp(16px, 4vw, 50px);
   font-weight: bold;
   margin: 0;
 }
@@ -86,6 +87,7 @@
 .project-card-subtext {
   color: white;
   font-size: 1.8vw;
+  font-size: clamp(12px, 1.8vw, 24px);
   font-weight: bold;
   margin: 0;
 }
