@@ -5,6 +5,7 @@ import DetailPane from './DetailPane';
 function PersonalProjects({ projects }) {
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [hoveredProject, setHoveredProject] = useState(null);
   const [curProject, setCurProject] = useState(null);
   const [openDetail, setOpenDetail] = useState(false);
   
@@ -37,12 +38,23 @@ function PersonalProjects({ projects }) {
                     key={index}
                     className='project-card'
                     onClick={() => setCurProject(project)}
+                    onMouseEnter={() => setHoveredProject(project)}
+                    onMouseLeave={() => setHoveredProject(null)}
+                    style={{
+                      backgroundImage: hoveredProject === project 
+                        ? `url(${process.env.PUBLIC_URL}/assets/images/${project.thumbnailUrl})`
+                        : 'none',
+                      backgroundSize: '95%',
+                      backgroundRepeat: 'no-repeat',
+                      backgroundPosition: 'center',
+                      backgroundBlendMode: 'overlay',
+                    }}
                   >
-                    <div className='project-card-content'>
-                      <div className='project-card-text'>
-                        <p className='project-card-name'>{project.name}</p>
-                        <p className='project-card-subtext'>{project.subtext}</p>
-                      </div>
+                    <div className='project-card-text'>
+                      <p className='project-card-name'>{project.name}</p>
+                      <p className='project-card-subtext'>{project.subtext}</p>
+                    </div>
+                    {/* <div className='project-card-content'>
                       {project.thumbnailUrl && 
                         <div className='project-thumbnail-container'>
                           <img
@@ -51,7 +63,7 @@ function PersonalProjects({ projects }) {
                           />
                         </div>
                       }
-                    </div>
+                    </div> */}
                   </button>
                 );
               })

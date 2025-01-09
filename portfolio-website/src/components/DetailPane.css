@@ -9,6 +9,7 @@
   transition: transform 0.25s ease-in-out;
   overflow-y: auto;
   overflow-x: hidden;
+  z-index: 100;
 }
 
 .detail-pane.open {

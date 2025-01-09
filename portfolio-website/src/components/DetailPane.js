@@ -45,7 +45,7 @@ export default function DetailPane({ project, setProject }) {
           <div className='detail-pane-project-description-container'>
             <p className='detail-pane-project-description-header'>Description</p>
             {project !== null && 
-              <p className='detail-pane-project-description-text'>{project.deescription}</p>
+              <p className='detail-pane-project-description-text'>{project.description}</p>
             }
           </div>
         </div>

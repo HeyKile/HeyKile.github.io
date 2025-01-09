@@ -6,7 +6,7 @@
       "subtext": "",
       "contributors": [],
       "technologies": "",
-      "deescription": "",
+      "description": "",
       "repoUrl": "",
       "thumbnailUrl": "",
       "screenshotUrls": []
@@ -34,7 +34,7 @@
         "Flutter",
         "Dart"
       ],
-      "deescription": "AllMoves is an exercise tracing app for all kinds of athletes. With a focus on customization, AllMoves provides the tools necessary to plan, customize, log, and track any exercises for any athlete.\nCreated as a project for an interface design class, AllMoves has become a project I'm extremely proud of. The scope of the class tasked us with making a prototype of the application, faking functionality and mocking data. However, our grouped has decided to continue development of AllMoves into a fully-functioning application. With the current frontend written in Flutter, we are currently deciding how we'd like to proceed in developing the rest of the application. However, we are all excited about the future of AllMoves, and I look forward to update this description as we move forward!",
+      "description": "AllMoves is an exercise tracing app for all kinds of athletes. With a focus on customization, AllMoves provides the tools necessary to plan, customize, log, and track any exercises for any athlete.\nCreated as a project for an interface design class, AllMoves has become a project I'm extremely proud of. The scope of the class tasked us with making a prototype of the application, faking functionality and mocking data. However, our grouped has decided to continue development of AllMoves into a fully-functioning application. With the current frontend written in Flutter, we are currently deciding how we'd like to proceed in developing the rest of the application. However, we are all excited about the future of AllMoves, and I look forward to update this description as we move forward!",
       "repoUrl": "https://github.com/HeyKile/exercise_tracking_app",
       "thumbnailUrl": "project-screenshots/AllMoves/thumbnail.png",
       "screenshotUrls": [
@@ -56,7 +56,7 @@
         "GCP",
         "GitHub Actions"
       ],
-      "deescription": "AllMoves is an exercise tracing app for all kinds of athletes. With a focus on customization, AllMoves provides the tools necessary to plan, customize, log, and track any exercises for any athlete.\nCreated as a project for an interface design class, AllMoves has become a project I'm extremely proud of. The scope of the class tasked us with making a prototype of the application, faking functionality and mocking data. However, our grouped has decided to continue development of AllMoves into a fully-functioning application. With the current frontend written in Flutter, we are currently deciding how we'd like to proceed in developing the rest of the application. However, we are all excited about the future of AllMoves, and I look forward to update this description as we move forward!",
+      "description": "AllMoves is an exercise tracing app for all kinds of athletes. With a focus on customization, AllMoves provides the tools necessary to plan, customize, log, and track any exercises for any athlete.\nCreated as a project for an interface design class, AllMoves has become a project I'm extremely proud of. The scope of the class tasked us with making a prototype of the application, faking functionality and mocking data. However, our grouped has decided to continue development of AllMoves into a fully-functioning application. With the current frontend written in Flutter, we are currently deciding how we'd like to proceed in developing the rest of the application. However, we are all excited about the future of AllMoves, and I look forward to update this description as we move forward!",
       "repoUrl": "https://github.com/HeyKile/exercise_tracking_app",
       "thumbnailUrl": "project-screenshots/AllMoves/thumbnail.png",
       "screenshotUrls": [
@@ -77,7 +77,26 @@
         "GDB",
         "Linux"
       ],
-      "deescription": "AllMoves is an exercise tracing app for all kinds of athletes. With a focus on customization, AllMoves provides the tools necessary to plan, customize, log, and track any exercises for any athlete.\nCreated as a project for an interface design class, AllMoves has become a project I'm extremely proud of. The scope of the class tasked us with making a prototype of the application, faking functionality and mocking data. However, our grouped has decided to continue development of AllMoves into a fully-functioning application. With the current frontend written in Flutter, we are currently deciding how we'd like to proceed in developing the rest of the application. However, we are all excited about the future of AllMoves, and I look forward to update this description as we move forward!",
+      "description": "AllMoves is an exercise tracing app for all kinds of athletes. With a focus on customization, AllMoves provides the tools necessary to plan, customize, log, and track any exercises for any athlete.\nCreated as a project for an interface design class, AllMoves has become a project I'm extremely proud of. The scope of the class tasked us with making a prototype of the application, faking functionality and mocking data. However, our grouped has decided to continue development of AllMoves into a fully-functioning application. With the current frontend written in Flutter, we are currently deciding how we'd like to proceed in developing the rest of the application. However, we are all excited about the future of AllMoves, and I look forward to update this description as we move forward!",
+      "repoUrl": "https://github.com/HeyKile/exercise_tracking_app",
+      "thumbnailUrl": "project-screenshots/AllMoves/thumbnail.png",
+      "screenshotUrls": [
+        "project-screenshots/AllMoves/home_page.png",
+        "project-screenshots/AllMoves/template_page.png",
+        "project-screenshots/AllMoves/template_builder.png",
+        "project-screenshots/AllMoves/exercise_creator.png",
+        "project-screenshots/AllMoves/workout_tracking.png",
+        "project-screenshots/AllMoves/stats_view.png"
+      ]
+    },
+    {
+      "name": "Sudo-crack",
+      "subtext": "Text-based sudoku solver",
+      "contributors": [],
+      "technologies": [
+        "Haskell"
+      ],
+      "description": "AllMoves is an exercise tracing app for all kinds of athletes. With a focus on customization, AllMoves provides the tools necessary to plan, customize, log, and track any exercises for any athlete.\nCreated as a project for an interface design class, AllMoves has become a project I'm extremely proud of. The scope of the class tasked us with making a prototype of the application, faking functionality and mocking data. However, our grouped has decided to continue development of AllMoves into a fully-functioning application. With the current frontend written in Flutter, we are currently deciding how we'd like to proceed in developing the rest of the application. However, we are all excited about the future of AllMoves, and I look forward to update this description as we move forward!",
       "repoUrl": "https://github.com/HeyKile/exercise_tracking_app",
       "thumbnailUrl": "project-screenshots/AllMoves/thumbnail.png",
       "screenshotUrls": [
