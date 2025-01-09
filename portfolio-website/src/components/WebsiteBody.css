@@ -5,6 +5,7 @@
   align-items: center;
   color: white;
   padding-top: 5px;
+  overflow-x: hidden;
 }
 
 .website-body-buttons {
