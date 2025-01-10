@@ -8,6 +8,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 500px;
+  height: max-content;
 }
 
 .image-dot {
@@ -53,8 +55,8 @@
 }
 
 .app-image {
-  min-height: 350px;
-  max-height: 60vh;
+  height: 60vh;
+  max-width: 100%;
   object-fit: contain;
   opacity: 0;
   transition: opacity 1s ease-in-out;
