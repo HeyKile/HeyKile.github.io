@@ -91,6 +91,64 @@
       ]
     },
     {
+      "name": "Budget Beater",
+      "primaryColor": "#37bd00",
+      "subtext": "Web Spending Tracker",
+      "contributors": [
+        {
+          "name": "Kyle Bello",
+          "githubLink": "https://github.com/HeyKile"
+        }
+      ],
+      "technologies": [
+        "Rust",
+        "React",
+        "Python",
+        "SQLite"
+      ],
+      "descriptionFileName": "Budget-Beater.txt",
+      "repoUrl": "https://github.com/HeyKile/budget-app",
+      "thumbnailUrl": "project-screenshots/budget-beater/categories.png",
+      "screenshotUrls": [
+        "project-screenshots/budget-beater/categories.png"
+      ]
+    },
+    {
+      "name": "Al-Genda",
+      "primaryColor": "#d7984b",
+      "subtext": "AI Schedule Builder",
+      "contributors": [
+        {
+          "name": "Kyle Bello",
+          "githubLink": "https://github.com/HeyKile"
+        },
+        {
+          "name": "Ruchi Hegde",
+          "githubLink": "https://github.com/ruchihegde"
+        },
+        {
+          "name": "Julianne Kruse",
+          "githubLink": "https://github.com/jkruse7"
+        }
+      ],
+      "technologies": [
+        "Flask",
+        "Python",
+        "React",
+        "JavaScript",
+        "Google Gemini"
+      ],
+      "descriptionFileName": "Al-Genda.txt",
+      "repoUrl": "https://github.com/jkruse7/ai-schedule-builder",
+      "thumbnailUrl": "project-screenshots/al-genda/al.jpg",
+      "screenshotUrls": [
+        "project-screenshots/al-genda/home.png",
+        "project-screenshots/al-genda/questions.png",
+        "project-screenshots/al-genda/recommendations.png",
+        "project-screenshots/al-genda/schedule.png"
+      ]
+    },
+    {
       "name": "Haskell Adventures",
       "primaryColor": "#834faa",
       "subtext": "Intro to functional programming",
@@ -113,6 +171,44 @@
         "project-screenshots/haskell-adventures/huffman-encoding.png",
         "project-screenshots/haskell-adventures/sudoku.png"
       ] 
+    },
+    {
+      "name": "Emberlite",
+      "primaryColor": "#4995f1",
+      "subtext": "Healthcare Burnout Tracker",
+      "contributors": [
+        {
+          "name": "Kyle Bello",
+          "githubLink": "https://github.com/HeyKile"
+        },
+        {
+          "name": "Vaageesha Das",
+          "githubLink": "https://github.com/vaageeshadas"
+        },
+        {
+          "name": "Connor Paladino",
+          "githubLink": "https://github.com/connorpaladino1"
+        },
+        {
+          "name": "Ruchi Hegde",
+          "githubLink": "https://github.com/ruchihegde"
+        }
+      ],
+      "technologies": [
+        "HTML/CSS",
+        "JavaScript",
+        "Python"
+      ],
+      "descriptionFileName": "Emberlite.txt",
+      "repoUrl": "https://github.com/ruh32/BurnoutApp",
+      "thumbnailUrl": "project-screenshots/emberlite/logo.png",
+      "screenshotUrls": [
+        "project-screenshots/emberlite/homescreen.png",
+        "project-screenshots/emberlite/questionaire.png",
+        "project-screenshots/emberlite/user-dashboard.png",
+        "project-screenshots/emberlite/admin-dashboard.png",
+        "project-screenshots/emberlite/logo.png"
+      ]
     }
   ]
 }

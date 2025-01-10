@@ -31,7 +31,7 @@
 
 .image-button-prev, .image-button-next {
   height: fit-content;
-  font-size: 1.5em;
+  font-size: 2em;
   background: none;
   border: none;
   opacity: 0;
@@ -41,6 +41,7 @@
   transform: translateY(-50%);
   padding-top: 1%;
   padding-bottom: 1%;
+  color: rgb(46, 112, 253);
 }
 
 .image-button-prev {
@@ -54,8 +55,6 @@
 .image-slide-show-container:hover .image-button-prev,
 .image-slide-show-container:hover .image-button-next {
   opacity: 1;
-  font-size: 2em;
-  color: white;
 }
 
 .app-image {
