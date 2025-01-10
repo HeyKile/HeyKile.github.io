@@ -8,7 +8,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  width: 40vw;
+  height: 40vh;
   height: max-content;
 }
 
@@ -31,7 +32,7 @@
 
 .image-button-prev, .image-button-next {
   height: fit-content;
-  font-size: large;
+  font-size: 1.5em;
   background: none;
   border: none;
   opacity: 0;
@@ -39,19 +40,22 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .image-button-prev {
-  left: 20px;
+  left: -5%;
 }
 
 .image-button-next {
-  right: 20px;
+  right: -5%;
 }
 
 .image-slide-show-container:hover .image-button-prev,
 .image-slide-show-container:hover .image-button-next {
   opacity: 1;
+  background-color: whitesmoke;
 }
 
 .app-image {
