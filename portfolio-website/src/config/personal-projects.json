@@ -3,6 +3,7 @@
   "template": [
     {
       "name": "",
+      "primaryColor": "",
       "subtext": "",
       "contributors": [
         {
@@ -11,7 +12,7 @@
         }
       ],
       "technologies": "",
-      "description": "",
+      "descriptionFileName": "",
       "repoUrl": "",
       "thumbnailUrl": "",
       "screenshotUrls": []
@@ -20,6 +21,7 @@
   "projects": [
     {
       "name": "AllMoves",
+      "primaryColor": "#6093ff",
       "subtext": "Exercise Tracking App",
       "contributors": [
         {
@@ -39,7 +41,7 @@
         "Flutter",
         "Dart"
       ],
-      "description": "AllMoves is an exercise tracing app for all kinds of athletes. With a focus on customization, AllMoves provides the tools necessary to plan, customize, log, and track any exercises for any athlete.\nCreated as a project for an interface design class, AllMoves has become a project I'm extremely proud of. The scope of the class tasked us with making a prototype of the application, faking functionality and mocking data. However, our grouped has decided to continue development of AllMoves into a fully-functioning application. With the current frontend written in Flutter, we are currently deciding how we'd like to proceed in developing the rest of the application. However, we are all excited about the future of AllMoves, and I look forward to update this description as we move forward!",
+      "descriptionFileName": "AllMoves.txt",
       "repoUrl": "https://github.com/HeyKile/exercise_tracking_app",
       "thumbnailUrl": "project-screenshots/AllMoves/thumbnail.png",
       "screenshotUrls": [
@@ -53,23 +55,45 @@
     },
     {
       "name": "Pick Perfect",
+      "primaryColor": "#4f7942",
       "subtext": "AI Planting Assitant",
-      "contributors": [],
+      "contributors": [
+        {
+          "name": "Kyle Bello",
+          "githubLink": "https://github.com/HeyKile"
+        },
+        {
+          "name": "Ayaan Siddiqui",
+          "githubLink": "https://github.com/22ayaan"
+        },
+        {
+          "name": "Ruchi Hegde",
+          "githubLink": "https://github.com/ruchihegde"
+        },
+        {
+          "name": "Jimmy Liu",
+          "githubLink": "https://github.com/jimmyll2"
+        }
+      ],
       "technologies": [
         "React",
         "Flask",
         "GCP",
         "GitHub Actions"
       ],
-      "description": "",
-      "repoUrl": "",
-      "thumbnailUrl": "project-screenshots/AllMoves/thumbnail.png",
+      "descriptionFileName": "Pick-Perfect.txt",
+      "repoUrl": "https://github.com/HeyKile/pick-perfect",
+      "thumbnailUrl": "project-screenshots/pick-perfect/ripe-fruit.png",
       "screenshotUrls": [
+        "project-screenshots/pick-perfect/ripe-fruit.png",
+        "project-screenshots/pick-perfect/unripe-fruit.png",
+        "project-screenshots/pick-perfect/not-plant.png"
       ]
     },
     {
       "name": "Haskell Adventures",
-      "subtext": "An intro to functional programming",
+      "primaryColor": "#834faa",
+      "subtext": "Intro to functional programming",
       "contributors": [
         {
           "name": "Kyle Bello",
@@ -80,8 +104,8 @@
         "Haskell",
         "GHC"
       ],
-      "description": "Haskell is cool. I hate it",
-      "repoUrl": "",
+      "descriptionFileName": "Haskell-Adventures.txt",
+      "repoUrl": "https://github.com/HeyKile/haskell-adventures",
       "thumbnailUrl": "project-screenshots/haskell-adventures/haskell-thumbnail.png",
       "screenshotUrls": [
         "project-screenshots/haskell-adventures/calculator.png",

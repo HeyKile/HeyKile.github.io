@@ -53,7 +53,7 @@
 
 .detail-pane-project-subtext {
   font-style: italic;
-  color: rgb(96, 147, 255);
+  color: white;
 }
 
 .project-contributors {
@@ -93,8 +93,8 @@
   display: flex;
   align-items: center;
   padding-top: 5vh;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
   padding-bottom: 5vh;
 }
 
@@ -106,8 +106,8 @@
 }
 
 .detail-pane-project-description-container {
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .detail-pane-project-description-header {
@@ -159,8 +159,13 @@
   }
 
   .detail-pane-image-container {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2%;
+    padding-right: 1%;
+  }
+
+  .detail-pane-description-text-container {
+    max-height: 50vh;
+    overflow-y: scroll;
   }
 }
 
@@ -188,7 +193,7 @@
 .detail-pane-repo-label {
   font-size: clamp(1.1rem, 1.6vw, 1.8rem);
   white-space: nowrap;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .detail-pane-repo-link-icon{

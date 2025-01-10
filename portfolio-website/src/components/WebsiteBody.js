@@ -7,10 +7,10 @@ import PersonalProjects from './PersonalProjects';
 function WebsiteBody() {
 
   const tabs = [
-    { label: 'About Me', content: <p>About me bro</p> },
+    { label: 'About Me', content: <p>Under construction...</p> },
     { label: 'Projects', content: <PersonalProjects projects={config.projects} /> },
-    { label: 'Work Experience', content: <p>Work bro</p> },
-    { label: 'Contacts', content: <p>Contacts bro</p> },
+    { label: 'Work Experience', content: <p>Under construction...</p> },
+    { label: 'Contacts', content: <p>Under construction...</p> },
   ];
 
   const [tab, setTab] = useState(1);

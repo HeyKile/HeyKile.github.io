@@ -4,13 +4,33 @@ import { toAssetUrl } from '../utils/utils';
 import './DetailPane.css';
 
 export default function DetailPane({ project, setProject }) {
+
+  const [descriptionText, setDescriptionText] = useState(undefined);
+
+  useEffect(() => {
+    setDescriptionText(undefined);
+    if (project && project.descriptionFileName) {
+      fetch(`${process.env.PUBLIC_URL}/assets/descriptions/${project.descriptionFileName}`)
+        .then((response) => response.text())
+        .then((text) => setDescriptionText(text))
+        .catch((error) => console.error('Error fetching description:', error));
+    }
+  }, [project]);
+
   return (
     <div className={`detail-pane ${project !== null ? 'open' : 'close'}`}>
       <div className='detail-pane-content'>
         <div className='detail-pane-header'>
           {project !== null &&
             <div className='project-title-container'>
-              <p className='detail-pane-project-title'>{project.name}: <a className='detail-pane-project-subtext'>{project.subtext}</a></p>
+              <p 
+                className='detail-pane-project-title'
+                style={{
+                  color: `${project.primaryColor ? project.primaryColor : ''}`
+                }}
+              >
+                {project.name}: <a className='detail-pane-project-subtext'>{project.subtext}</a>
+              </p>
               {project.contributors && project.contributors.length > 0 &&
                 <p className='project-contributors'>By: {project.contributors.map((contributor, index) => {
                   return (
@@ -47,11 +67,15 @@ export default function DetailPane({ project, setProject }) {
               {project.technologies && project.technologies.length > 0 &&
                 <a className='detail-pane-project-description-text'>{project.technologies.join(", ")}</a>
               }
-              {project.description &&
+              {descriptionText &&
                 <p className='detail-pane-project-description-header'>Description</p>
               }
-              {project.description &&
-                <p className='detail-pane-project-description-text'>{project.description}</p>
+              {descriptionText &&
+                <div className='detail-pane-description-text-container'>
+                  {descriptionText.split('\n').map((text, index) => {
+                    return <p key={index} className='detail-pane-project-description-text'>{text}</p>
+                  })}
+                </div>
               }
             </div>
           }

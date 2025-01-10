@@ -9,7 +9,6 @@
   flex-direction: column;
   align-items: center;
   width: 40vw;
-  height: 40vh;
   height: max-content;
 }
 
@@ -45,17 +44,18 @@
 }
 
 .image-button-prev {
-  left: -5%;
+  left: 0%;
 }
 
 .image-button-next {
-  right: -5%;
+  right: 0%;
 }
 
 .image-slide-show-container:hover .image-button-prev,
 .image-slide-show-container:hover .image-button-next {
   opacity: 1;
-  background-color: whitesmoke;
+  font-size: 2em;
+  color: white;
 }
 
 .app-image {

@@ -7,17 +7,12 @@ function PersonalProjects({ projects }) {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [hoveredProject, setHoveredProject] = useState(null);
   const [curProject, setCurProject] = useState(null);
-  const [openDetail, setOpenDetail] = useState(false);
   
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  useEffect(() => {
-    setOpenDetail(curProject !== null);
-  }, [curProject]);
 
   return (
     <div className='personal-projects-container'>
@@ -51,7 +46,12 @@ function PersonalProjects({ projects }) {
                     }}
                   >
                     <div className='project-card-text'>
-                      <p className='project-card-name'>{project.name}</p>
+                      <p 
+                        className='project-card-name'
+                        style={{
+                          color: `${project.primaryColor ? project.primaryColor : '#6093ff'}`
+                        }}
+                      >{project.name}</p>
                       <p className='project-card-subtext'>{project.subtext}</p>
                     </div>
                     {/* <div className='project-card-content'>
