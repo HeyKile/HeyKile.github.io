@@ -210,5 +210,12 @@
         "project-screenshots/emberlite/logo.png"
       ]
     }
-  ]
+  ],
+  "aboutMe": {
+    "name": "Kyle Bello",
+    "descriptors": [
+      "Software Engineer"
+    ],
+    "fileName": "about-me.txt" 
+  }
 }

@@ -3,17 +3,18 @@ import { useState } from 'react';
 import './WebsiteBody.css';
 import config from '../config/personal-projects.json';
 import PersonalProjects from './PersonalProjects';
+import AboutMe from './AboutMe';
 
 function WebsiteBody() {
 
   const tabs = [
-    { label: 'About Me', content: <p>Under construction...</p> },
+    { label: 'About Me', content: <AboutMe aboutMe={config.aboutMe}/> },
     { label: 'Projects', content: <PersonalProjects projects={config.projects} /> },
     { label: 'Work Experience', content: <p>Under construction...</p> },
     { label: 'Contacts', content: <p>Under construction...</p> },
   ];
 
-  const [tab, setTab] = useState(1);
+  const [tab, setTab] = useState(0);
 
   return (
     <div className='website-body'>

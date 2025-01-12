@@ -1,0 +1,16 @@
+.about-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-information-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 90%;
+}
+
+.about-me-name {
+  
+}
