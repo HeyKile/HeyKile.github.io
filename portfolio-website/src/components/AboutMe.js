@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import './AboutMe.css';
 
-export default function AboutMe({ aboutMe }) {
+export default function AboutMe({ aboutMe, charsDisplayed, setCharsDisplayed, showContent }) {
 
   const [description, setDescription] = useState(undefined);
   const [name, setName] = useState("");
-  const [charsDisplayed, setCharsDisplayed] = useState(0);
 
   useEffect(() => {
     if (aboutMe && aboutMe.descriptionFilename) {
@@ -40,7 +39,7 @@ export default function AboutMe({ aboutMe }) {
         setName(prevName => 
           prevName.endsWith('_') ? prevName.slice(0, -1) : prevName + '_'
         );
-      }, 1000);
+      }, 750);
       return () => clearInterval(interval);
     }
   }, [charsDisplayed, aboutMe]);
@@ -50,21 +49,27 @@ export default function AboutMe({ aboutMe }) {
       <div className="about-me-information-container">
         {aboutMe.name !== undefined &&
           <div className="about-me-header">
-            <p className="about-me-pretext">Hey! my name is</p>
+            <p className="about-me-pretext">Hey! My name is</p>
             <p className={`about-me-name ${name.endsWith('_') ? '' : 'add-space'}`}>
               {name}
             </p>
           </div>
         }
       </div>
-      <div className='about-me-description-container'>
-        {aboutMe && aboutMe.pictureFilename &&
+      <div
+        className='about-me-description-container'
+        style={{
+          visibility: `${showContent ? 'visible' : 'hidden'}`,
+          opacity: `${showContent ? '1' : '0'}`
+        }}
+      >
+        {aboutMe && aboutMe.pictureFilename && description !== undefined &&
           <img
             className="about-me-photo"
             src={`${process.env.PUBLIC_URL}/assets/images/${aboutMe.pictureFilename}`}
           />
         }
-        {description !== undefined && 
+        {aboutMe && aboutMe.pictureFilename && description !== undefined &&
           <p className="about-me-description">{description}</p>
         }
       </div>

@@ -1,11 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import './WebsiteBody.css';
-import config from '../config/personal-projects.json';
 import PersonalProjects from './PersonalProjects';
 import AboutMe from './AboutMe';
 
-function WebsiteBody() {
+function WebsiteBody({ config, showContent }) {
 
   const tabs = [
     // { label: 'About Me', content: <AboutMe aboutMe={config.aboutMe}/> },
@@ -16,8 +15,18 @@ function WebsiteBody() {
 
   const [tab, setTab] = useState(0);
 
+  if (!showContent) {
+    return;
+  }
+
   return (
-    <div className='website-body'>
+    <div
+      className='website-body'
+      style={{
+        visibility: `${showContent ? 'visible' : 'hidden'}`,
+        opacity: `${showContent ? '1' : '0'}`
+      }}
+    >
       <div className='website-body-buttons'>
         {tabs.map((curTab, index) => (
           <button

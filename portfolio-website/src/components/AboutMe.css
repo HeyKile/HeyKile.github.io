@@ -49,6 +49,7 @@
   width: 80%;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   padding-bottom: 10vh;
+  transition: opacity 1s ease-in-out 0.75s, visibility 1s ease-in-out;
 }
 
 .about-me-photo {
