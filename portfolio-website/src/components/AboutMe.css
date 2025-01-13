@@ -48,7 +48,8 @@
   justify-content: center;
   width: 80%;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
-  padding-bottom: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 20vh;
   transition: opacity 1s ease-in-out 0.75s, visibility 1s ease-in-out;
 }
 
@@ -59,5 +60,5 @@
 
 .about-me-description {
   max-width: 500px;
-  padding: 0 10%;
+  padding: 0 5%;
 }

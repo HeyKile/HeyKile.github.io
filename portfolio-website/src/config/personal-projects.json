@@ -214,6 +214,7 @@
   "aboutMe": {
     "name": "Kyle Bello",
     "descriptionFilename": "about-me.txt",
-    "pictureFilename": "kyle-images/kyle_linkedin_pic.JPEG"
+    "pictureFilename": "kyle-images/kyle_bush.JPEG",
+    "primaryColor": "#6093ff"
   }
 }
