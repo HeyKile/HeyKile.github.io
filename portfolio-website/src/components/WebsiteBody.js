@@ -8,7 +8,7 @@ import AboutMe from './AboutMe';
 function WebsiteBody() {
 
   const tabs = [
-    { label: 'About Me', content: <AboutMe aboutMe={config.aboutMe}/> },
+    // { label: 'About Me', content: <AboutMe aboutMe={config.aboutMe}/> },
     { label: 'Projects', content: <PersonalProjects projects={config.projects} /> },
     { label: 'Work Experience', content: <p>Under construction...</p> },
     { label: 'Contacts', content: <p>Under construction...</p> },

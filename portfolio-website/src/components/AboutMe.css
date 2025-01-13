@@ -1,7 +1,8 @@
 .about-me-container {
   display: flex;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
-  justify-content: center;
 }
 
 .about-me-information-container {
@@ -15,6 +16,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
 }
 
 .about-me-pretext {
@@ -37,4 +40,23 @@
 .add-space::after {
   content: '_';
   visibility: hidden;
+}
+
+.about-me-description-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  padding-bottom: 10vh;
+}
+
+.about-me-photo {
+  /* width: 30%; */
+  max-width: 300px;
+}
+
+.about-me-description {
+  max-width: 500px;
+  padding: 0 10%;
 }

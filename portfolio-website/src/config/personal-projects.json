@@ -213,9 +213,7 @@
   ],
   "aboutMe": {
     "name": "Kyle Bello",
-    "descriptors": [
-      "Software Engineer0`"
-    ],
-    "fileName": "about-me.txt" 
+    "descriptionFilename": "about-me.txt",
+    "pictureFilename": "kyle-images/kyle_linkedin_pic.JPEG"
   }
 }

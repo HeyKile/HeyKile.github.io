@@ -8,17 +8,8 @@ export default function AboutMe({ aboutMe }) {
   const [charsDisplayed, setCharsDisplayed] = useState(0);
 
   useEffect(() => {
-    if (aboutMe && aboutMe.fileName) {
-      fetch(`${process.env.PUBLIC_URL}/assets/documents/${aboutMe.fileName}`)
-        .then((response) => response.text())
-        .then((text) => setDescription(text))
-        .catch((error) => console.error('Error fetching description:', error));
-    }
-  }, [aboutMe]);
-
-  useEffect(() => {
-    if (aboutMe && aboutMe.fileName) {
-      fetch(`${process.env.PUBLIC_URL}/assets/documents/${aboutMe.fileName}`)
+    if (aboutMe && aboutMe.descriptionFilename) {
+      fetch(`${process.env.PUBLIC_URL}/assets/documents/${aboutMe.descriptionFilename}`)
         .then((response) => response.text())
         .then((text) => setDescription(text))
         .catch((error) => console.error('Error fetching description:', error));
@@ -65,8 +56,16 @@ export default function AboutMe({ aboutMe }) {
             </p>
           </div>
         }
+      </div>
+      <div className='about-me-description-container'>
+        {aboutMe && aboutMe.pictureFilename &&
+          <img
+            className="about-me-photo"
+            src={`${process.env.PUBLIC_URL}/assets/images/${aboutMe.pictureFilename}`}
+          />
+        }
         {description !== undefined && 
-          <p>{description}</p>
+          <p className="about-me-description">{description}</p>
         }
       </div>
     </div>
