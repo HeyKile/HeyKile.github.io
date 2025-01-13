@@ -2,24 +2,17 @@ import React, { useState, useEffect } from 'react';
 import './PersonalProjects.css';
 import DetailPane from './DetailPane';
 
-function PersonalProjects({ projects }) {
+function PersonalProjects({ projects, setCurProject }) {
 
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [hoveredProject, setHoveredProject] = useState(null);
-  const [curProject, setCurProject] = useState(null);
-  
-  useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  // const [curProject, setCurProject] = useState(null);
 
   return (
     <div className='personal-projects-container'>
-      <DetailPane
+      {/* <DetailPane
         project={curProject} 
         setProject={setCurProject}
-      />
+      /> */}
       <div className='personal-projects-info'>
         <h2 className='personal-projects-title'>Personal Projects</h2>
         <p className='personal-projects-subtext'>Here is a list of personal projects I've completed over the last few years. Click on each to learn more. Enjoy!</p>

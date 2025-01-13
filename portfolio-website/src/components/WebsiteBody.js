@@ -4,11 +4,11 @@ import './WebsiteBody.css';
 import PersonalProjects from './PersonalProjects';
 import AboutMe from './AboutMe';
 
-function WebsiteBody({ config, showContent }) {
+function WebsiteBody({ config, showContent, setCurProject }) {
 
   const tabs = [
     // { label: 'About Me', content: <AboutMe aboutMe={config.aboutMe}/> },
-    { label: 'Projects', content: <PersonalProjects projects={config.projects} /> },
+    { label: 'Projects', content: <PersonalProjects projects={config.projects} setCurProject={setCurProject}/> },
     { label: 'Work Experience', content: <p>Under construction...</p> },
     { label: 'Contacts', content: <p>Under construction...</p> },
   ];
