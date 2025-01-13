@@ -1,17 +1,6 @@
 import React from 'react';
-import ImageSlideShow from './ImageSlideShow';
+import config from '../config/personal-projects.json';
 import './WebsiteHeader.css';
-
-const getImages = () => {
-  return [
-    `${process.env.PUBLIC_URL}/assets/images/kyle-images/kyle_grad_solo.JPEG`,
-    `${process.env.PUBLIC_URL}/assets/images/kyle-images/kyle_linkedin_pic.JPEG`,
-    `${process.env.PUBLIC_URL}/assets/images/kyle-images/kyle_grad_parents.JPEG`,
-    `${process.env.PUBLIC_URL}/assets/images/kyle-images/kyle_uhs_grad.JPEG`,
-    `${process.env.PUBLIC_URL}/assets/images/kyle-images/kyle_bush.JPEG`,
-    `${process.env.PUBLIC_URL}/assets/images/kyle-images/kyle_grad_sibs.JPEG`,
-  ];
-};
 
 const getBackgroundImages = () => {
   return [
@@ -25,8 +14,7 @@ const getBackgroundImages = () => {
 };
 
 function WebsiteHeader() {
-
-  const images = getImages();
+  
   const backgroundImages = getBackgroundImages();
   const backgroundImageIndex = Math.floor(Math.random() * backgroundImages.length);
 
