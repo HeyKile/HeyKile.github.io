@@ -16,8 +16,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 25vh;
-  padding-bottom: 25vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 .about-me-pretext {
@@ -46,19 +46,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
-  padding-top: 5vh;
-  padding-bottom: 20vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
   transition: opacity 1s ease-in-out 0.75s, visibility 1s ease-in-out;
+  background-color: #2c2c2c;
+  border: 2.5px solid #2c2c2c;
+  border-radius: 2%;
+  box-shadow: 4px 4px 4px #202020;
+  max-width: 50%;
+  padding-left: 2%;
 }
 
 .about-me-photo {
   /* width: 30%; */
+  padding: 5% 0;
   max-width: 300px;
 }
 
 .about-me-description {
-  max-width: 500px;
+  /* max-width: 50%; */
   padding: 0 5%;
 }

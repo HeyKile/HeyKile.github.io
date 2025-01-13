@@ -18,18 +18,19 @@
 
 .personal-projects-title {
   margin-bottom: 0;
+  font-size: clamp(20px, 3vw, 36px);
 }
 
 .personal-projects-subtext {
   text-align: center;
+  font-size: clamp(12px, 1.5vw, 20px);
 }
 
 .project-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 10px;
-  width: 90%;
-  max-width: 1200px;
+  max-width: 90%;
   gap: 1.5%;
   padding-bottom: 10%;
 }
@@ -42,13 +43,12 @@
   border: 2.5px solid #2c2c2c;
   border-radius: 2%;
   box-shadow: 2% 2% 2% #252525;
-  width: 100%;
-  max-width: 600px;
+  width: 15vw;
+  max-width: 300px;
   aspect-ratio: 1 / 1;
   transition: transform 0.3s ease;
   text-align: left;
   color: white;
-  width: 100%;
 }
 
 .project-card:hover {
@@ -68,6 +68,7 @@
   padding-top: 1%;
   padding-bottom: 3%;
   padding-left: 3%;
+  width: 100%;
   background: linear-gradient(
     to right, 
     rgba(44, 44, 44, 0.9), 
@@ -79,7 +80,7 @@
   color: rgb(96, 147, 255);
   max-width: 90%;
   font-size: 4vw;
-  font-size: clamp(16px, 4vw, 50px);
+  font-size: clamp(16px, 3.5vw, 42px);
   font-weight: bold;
   margin: 0;
 }
@@ -87,7 +88,7 @@
 .project-card-subtext {
   color: white;
   font-size: 1.8vw;
-  font-size: clamp(12px, 1.8vw, 24px);
+  font-size: clamp(12px, 1.4vw, 22px);
   font-weight: bold;
   margin: 0;
 }
