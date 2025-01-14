@@ -217,7 +217,6 @@
     "pictureFilename": "kyle-images/kyle_bush.JPEG",
     "primaryColor": "#6093ff"
   },
-  "workExperience": [],
   "contacts": {
     "socialsText": "Want to stalk me digitally? Check me out here!",
     "socialLinks": [
@@ -242,5 +241,36 @@
     "emailIcon": "fa-solid fa-envelope",
     "copyIconUncopied": "fa-regular fa-copy",
     "copyIconCopied": "fa-solid fa-copy"
+  },
+  "workExperience": {
+    "jobs": [
+      {
+        "companyName": "Universal Health Services",
+        "companyUrl": "https://uhs.com/",
+        "role": "Software Engineering Intern",
+        "startDate": "June 2024",
+        "endDate": "December 2024",
+        "logoFilePath": "work-experience-images/uhs.png",
+        "descriptionFileName": "uhs.txt"
+      },
+      {
+        "companyName": "University of Pittsburgh",
+        "companyUrl": "https://www.sci.pitt.edu/",
+        "role": "Undergraduate Teaching Assistant",
+        "startDate": "December 2023",
+        "endDate": "August 2024",
+        "logoFilePath": "work-experience-images/uta.png",
+        "descriptionFileName": "uta.txt"
+      },
+      {
+        "companyName": "The Boardroom Restaurant & Bottle Shop",
+        "companyUrl": "https://www.theboardroompxv.com/",
+        "role": "Server/Bartender",
+        "startDate": "June 2021",
+        "endDate": "August 2023",
+        "logoFilePath": "work-experience-images/boardroom.png",
+        "descriptionFileName": "boardroom.txt"
+      }
+    ]
   }
 }

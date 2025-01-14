@@ -1,0 +1,5 @@
+Developed and maintained custom healthcare software for a Fortune 500 company
+Designed full-stack software solutions utilizing JavaScript, HTML/CSS, and Cerner CCL
+Optimized database usage through implementing a caching system, reducing excess database calls by 60%
+Significantly advanced the development of UHS's mobile healthcare app, personally completing 45% of the project
+Engaged in Agile development practices to offer feedback, streamline the development process, and foster collaboration
