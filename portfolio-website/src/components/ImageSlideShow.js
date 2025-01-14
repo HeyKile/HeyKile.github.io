@@ -33,7 +33,7 @@ function ImageSlideShow({ images }) {
           })[currentImageIndex]}
         </div>
         <div className='image-dots'>
-          {images !== undefined && images.length > 0 && images.map((image, index) => {
+          {images !== undefined && images.length > 1 && images.map((image, index) => {
             return (
               <span
                 key={index}

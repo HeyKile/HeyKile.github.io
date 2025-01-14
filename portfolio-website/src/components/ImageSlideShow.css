@@ -68,3 +68,21 @@
 .app-image.active {
   opacity: 1;
 }
+
+@media (max-width: 767px) {
+  .image-slide-show-container-inner {
+    width: 80vw;
+  }
+
+  .image-button-prev, .image-button-next {
+    opacity: 1;
+  }
+
+  .image-button-prev {
+    left: -6%;
+  }
+  
+  .image-button-next {
+    right: -6%;
+  }
+}
