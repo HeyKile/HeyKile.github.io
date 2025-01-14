@@ -216,5 +216,31 @@
     "descriptionFilename": "about-me.txt",
     "pictureFilename": "kyle-images/kyle_bush.JPEG",
     "primaryColor": "#6093ff"
+  },
+  "workExperience": [],
+  "contacts": {
+    "socialsText": "Want to stalk me digitally? Check me out here!",
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/HeyKile",
+        "iconName": "fa-brands  fa-github"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/kyle-bello/",
+        "iconName": "fa-brands fa-linkedin"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/user/badnewsbears456",
+        "iconName": "fa-brands fa-spotify"
+      }
+    ],
+    "contactText": "Want to chat? Send me a message!",
+    "email": "bellokp2002@gmail.com",
+    "emailIcon": "fa-solid fa-envelope",
+    "copyIconUncopied": "fa-regular fa-copy",
+    "copyIconCopied": "fa-solid fa-copy"
   }
 }
