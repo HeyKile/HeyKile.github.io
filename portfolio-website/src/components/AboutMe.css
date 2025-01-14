@@ -54,7 +54,8 @@
   border: 2.5px solid #2c2c2c;
   border-radius: 2%;
   box-shadow: 4px 4px 4px #202020;
-  max-width: 50%;
+  width: 80vw;
+  max-width: 990px;
   padding-left: 2%;
 }
 
@@ -67,4 +68,36 @@
 .about-me-description {
   /* max-width: 50%; */
   padding: 0 5%;
+}
+
+@media (max-width: 768px) {
+  .about-me-header {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .about-me-description-container {
+    flex-direction: column;
+    max-width: 85%;
+    margin-bottom: 5vh;
+  }
+
+  .about-me-photo {
+    max-width: 225px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .about-me-header {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .about-me-description-container {
+    flex-direction: row;
+  }
+
+  .about-me-description-container {
+    margin-bottom: 2vh;
+  }
 }

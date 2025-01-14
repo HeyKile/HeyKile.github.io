@@ -12,27 +12,24 @@
 
 .website-body-buttons {
   display: flex;
-  align-items: center;
-  max-width: 95%;
-  margin-top: .5vh;
-  margin-bottom: .5vh;
+  gap: 8px;
+  width: 90%;
+  max-width: 1000px;
+  margin-bottom: 1vh;
 }
 
 .body-button, .body-button--selected {
-  font-size: larger;
-  width: 20vw;
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center;
+  flex: 1;
   overflow: hidden;
-  white-space: nowrap;
+  padding: 1% 5%;
+  min-width: 0;
+  font-size: clamp(.8rem, 1.3vw, 1.3rem);;
+  background: #007bff;
   color: white;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .body-button {
@@ -42,9 +39,16 @@
 
 .body-button:hover {
   border-color: rgb(46, 112, 253);
+  transform: scale(1.03);
 }
 
 .body-button--selected {
   background-color: rgb(96, 147, 255);
   border-color: rgb(46, 112, 253);
+}
+
+@media (max-width: 768px) {
+  .website-body-buttons {
+    max-width: 95%;
+  }
 }
