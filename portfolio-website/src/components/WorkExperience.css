@@ -1,7 +1,7 @@
 .work-experience-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
 }
 
 .work-experience-info {
@@ -11,12 +11,107 @@
 .work-experience-content {
   display: flex;
   flex-direction: column;
-  max-width: 70vw;
 }
 
 .work-experience-card {
   background-color: #2c2c2c;
   border: 2.5px solid #2c2c2c;
-  border-radius: 2%;
-  box-shadow: 2% 2% 2% #252525;
+  border-radius: 5px;
+  box-shadow: 3px 2px 2px #252525;
+  margin: 1%;
+  width: 80vw;
+  max-width: 800px;
+  padding: 0 1.5%;
+  min-width: fit-content;
+  text-wrap: nowrap;
+}
+
+.work-experience-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-exerpience-card-header-names {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-experience-job-role {
+  font-size: clamp(.8rem, 1.6vw, 1.6rem);
+  white-space: nowrap;
+  font-style: italic;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.work-experience-company-name {
+  font-size: clamp(.6rem, 1.2vw, 1.2rem);
+  font-style: italic;
+}
+
+.work-exerpience-card-header-dates {
+  display: flex;
+  align-items: right;
+  padding: 0.5% 0;
+}
+
+.work-experience-job-dates {
+  font-size: clamp(.6rem, 1vw, 1rem);
+  font-style: italic;
+  text-align: right;
+  max-width: fit-content;
+}
+
+.work-experience-card-body {
+  text-wrap: pretty;
+}
+
+.work-experience-job-description-bullet-list {
+  list-style-type: disc;
+}
+
+.work-experience-job-list-item {
+  font-size: clamp(.8rem, 1.2vw, 1.2rem);
+}
+
+.work-experience-job-description-text {
+  font-size: clamp(.6rem, 1vw, 1rem);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .work-experience-content {
+    align-items: center;
+  }
+  
+  .work-experience-card {
+    width: 85vw;
+    max-width: 85vw;
+  }
+
+  .work-experience-card-header {
+    flex-direction: column;
+    padding-left: 0.75%;
+  }
+
+  .work-experience-job-role {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    text-wrap: pretty;
+  }
+
+  .work-experience-company-name {
+    font-size: clamp(.9rem, 4vw, 1.1rem);
+  }
+
+  .work-experience-job-dates {
+    font-size: clamp(.7rem, 3vw, .9rem);
+  }
+
+  .work-experience-job-description-text {
+    font-size: clamp(.9rem, 1.2vw, 1.2rem);
+  }
+
+  .work-experience-job-description-bullet-list {
+    margin-top: 3%;
+  }
 }

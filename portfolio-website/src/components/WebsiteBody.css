@@ -7,7 +7,6 @@
   color: white;
   padding-top: 5px;
   overflow-x: hidden;
-  transition: opacity 1s ease-in-out 0.75s, visibility 1s ease-in-out;
 }
 
 .website-body-buttons {
@@ -37,8 +36,8 @@
   border: 1px solid #2c2c2c;
 }
 
-.body-button:hover {
-  border-color: rgb(46, 112, 253);
+.body-button:hover, .body-button--selected:hover {
+  border: 1px solid rgb(46, 112, 253);
   transform: scale(1.03);
 }
 
@@ -48,6 +47,10 @@
 }
 
 @media (max-width: 768px) {
+  .website-body {
+    padding-bottom: 50%;
+  }
+
   .website-body-buttons {
     max-width: 95%;
   }
