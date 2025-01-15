@@ -13,7 +13,7 @@ function WebsiteBody({ config, showContent, setCurProject }) {
     { label: 'Contacts', content: <Contacts contacts={config.contacts} /> },
   ];
 
-  const [tab, setTab] = useState(1);
+  const [tab, setTab] = useState(0);
 
   if (!showContent) {
     return;
