@@ -251,10 +251,7 @@
         "role": "Software Engineering Intern",
         "startDate": "June 2024",
         "endDate": "December 2024",
-        "logoFilePath": "work-experience-images/uhs.png",
-        "descriptionFileName": "uhs.txt",
-        "primaryColor": "#003a5d",
-        "secondaryColor": "#900028"
+        "descriptionFileName": "uhs.txt"
       },
       {
         "companyName": "University of Pittsburgh",
@@ -262,10 +259,7 @@
         "role": "Undergraduate Teaching Assistant",
         "startDate": "December 2023",
         "endDate": "August 2024",
-        "logoFilePath": "work-experience-images/uta.png",
-        "descriptionFileName": "uta.txt",
-        "primaryColor": "",
-        "secondaryColor": ""
+        "descriptionFileName": "uta.txt"
       },
       {
         "companyName": "The Boardroom Restaurant & Bottle Shop",
@@ -273,10 +267,7 @@
         "role": "Server/Bartender",
         "startDate": "June 2021",
         "endDate": "August 2023",
-        "logoFilePath": "work-experience-images/boardroom.png",
-        "descriptionFileName": "boardroom.txt",
-        "primaryColor": "",
-        "secondaryColor": ""
+        "descriptionFileName": "boardroom.txt"
       }
     ]
   }
