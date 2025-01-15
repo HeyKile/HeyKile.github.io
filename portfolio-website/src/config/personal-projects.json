@@ -243,6 +243,7 @@
     "copyIconCopied": "fa-solid fa-copy"
   },
   "workExperience": {
+    "title": "Work Experience",
     "jobs": [
       {
         "companyName": "Universal Health Services",

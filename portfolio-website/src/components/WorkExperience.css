@@ -1,0 +1,22 @@
+.work-experience-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.work-experience-info {
+  text-align: center;
+}
+
+.work-experience-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 70vw;
+}
+
+.work-experience-card {
+  background-color: #2c2c2c;
+  border: 2.5px solid #2c2c2c;
+  border-radius: 2%;
+  box-shadow: 2% 2% 2% #252525;
+}
