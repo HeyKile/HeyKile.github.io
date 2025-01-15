@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import config from './config/personal-projects.json';
+import config from './config/config.json';
 import './App.css';
 import DetailPane from './components/DetailPane';
 import WebsiteHeader from './components/WebsiteHeader';

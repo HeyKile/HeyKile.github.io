@@ -1,5 +1,5 @@
 import React from 'react';
-import config from '../config/personal-projects.json';
+import config from '../config/config.json';
 import AboutMe from './AboutMe';
 import './WebsiteHeader.css';
 
