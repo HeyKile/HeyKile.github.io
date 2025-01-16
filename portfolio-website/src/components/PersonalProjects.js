@@ -38,12 +38,10 @@ function PersonalProjects({ projects, setCurProject }) {
                       backgroundColor: showMobile === true
                         ? 'transparent'
                         : '',
-                      border: showMobile === true
-                        ? '2.5px solid rgb(46, 112, 253)'
+                      borderColor: showMobile === true
+                        ? 'rgb(46, 112, 253)'
                         : '',
-                      boxShadow: showMobile === true
-                        ? '3px 2px 2px rgb(96, 147, 255)'
-                        : ''
+                      padding: 0
                     }}
                   >
                     <div className='project-card-text'>
