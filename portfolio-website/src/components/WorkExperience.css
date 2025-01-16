@@ -118,5 +118,6 @@
   .work-experience-job-description-bullet-list {
     margin-top: 3%;
     padding-left: 5%;
+    text-wrap: wrap;
   }
 }
