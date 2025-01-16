@@ -40,7 +40,7 @@
 }
 
 .work-experience-job-role {
-  font-size: clamp(.8rem, 1.6vw, 1.6rem);
+  font-size: clamp(1rem, 1.8vw, 1.6rem);
   white-space: nowrap;
   font-style: italic;
   font-weight: bold;
@@ -48,7 +48,7 @@
 }
 
 .work-experience-company-name {
-  font-size: clamp(.6rem, 1.2vw, 1.2rem);
+  font-size: clamp(.85rem, 1.2vw, 1.2rem);
   font-style: italic;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .work-experience-job-dates {
-  font-size: clamp(.6rem, 1vw, 1rem);
+  font-size: clamp(.85rem, 1vw, 1rem);
   font-style: italic;
   text-align: right;
   max-width: fit-content;
@@ -71,6 +71,7 @@
 
 .work-experience-job-description-bullet-list {
   list-style-type: disc;
+  text-wrap: pretty;
 }
 
 .work-experience-job-list-item {
@@ -78,7 +79,7 @@
 }
 
 .work-experience-job-description-text {
-  font-size: clamp(.6rem, 1vw, 1rem);
+  font-size: clamp(.9rem, 1vw, 1rem);
   color: white;
 }
 
@@ -116,5 +117,6 @@
 
   .work-experience-job-description-bullet-list {
     margin-top: 3%;
+    padding-left: 5%;
   }
 }
