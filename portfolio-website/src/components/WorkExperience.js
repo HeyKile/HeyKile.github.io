@@ -61,19 +61,6 @@ export default function WorkExperience({ workExperience }) {
                       <span className="work-experience-job-dates">{job.startDate} - {job.endDate}</span>
                     }
                   </div>
-                  {/* <div className="work-exerpience-card-header-top">
-                    {job.role &&
-                      <span className="work-experience-job-role">{job.role}</span>
-                    }
-                    {job.startDate && job.endDate &&
-                      <span className="work-experience-job-dates">{job.startDate} - {job.endDate}</span>
-                    }
-                  </div>
-                  <div className="work-exerpience-card-header-bottom">
-                    {job.companyName && 
-                      <span className="work-experience-company-name">{job.companyName}</span>
-                    }
-                  </div> */}
                 </div>
               }
               {!isLoadingDescriptions && job && job.descriptionText && job.descriptionText.length > 0 &&
