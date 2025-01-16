@@ -143,3 +143,9 @@
     width: 30vw;
   }
 }
+
+@media (min-width: 1200px) {
+  .project-card {
+    width: 25vw;
+  }
+}

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './PersonalProjects.css';
-import DetailPane from './DetailPane';
 import { isMobile } from '../utils/utils';
 
 function PersonalProjects({ projects, setCurProject }) {
