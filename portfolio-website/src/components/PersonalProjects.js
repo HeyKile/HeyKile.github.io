@@ -27,10 +27,12 @@ function PersonalProjects({ projects, setCurProject }) {
                     onMouseEnter={() => setHoveredProject(project)}
                     onMouseLeave={() => setHoveredProject(null)}
                     style={{
-                      backgroundImage: (hoveredProject === project || showMobile === true)
+                      backgroundImage: project.thumbnailUrl && project.thumbnailUrl.length > 0
                         ? `url(${process.env.PUBLIC_URL}/assets/images/${project.thumbnailUrl})`
                         : 'none',
-                      backgroundSize: '95%',
+                      backgroundSize: (hoveredProject === project || showMobile === true)
+                        ? '95%'
+                        : '0%',
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'center',
                       backgroundBlendMode: 'overlay',

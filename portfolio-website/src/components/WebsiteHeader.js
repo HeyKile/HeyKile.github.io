@@ -1,9 +1,8 @@
 import React from 'react';
-import config from '../config/config.json';
 import AboutMe from './AboutMe';
 import './WebsiteHeader.css';
 
-function WebsiteHeader({ charsDisplayed, setCharsDisplayed, showContent }) {
+function WebsiteHeader({ config, charsDisplayed, setCharsDisplayed, showContent }) {
 
   return (
     <header className="app-header">
