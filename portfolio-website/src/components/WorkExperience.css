@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.work-experience-title {
+  font-size: clamp(20px, 3vw, 36px);
+}
+
 .work-experience-content {
   display: flex;
   flex-direction: column;
