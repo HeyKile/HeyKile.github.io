@@ -81,6 +81,8 @@
   }
 
   .about-me-photo {
+    padding: 0%;
+    padding-top: 4%;
     max-width: 225px;
   }
 }

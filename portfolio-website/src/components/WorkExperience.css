@@ -26,7 +26,6 @@
   width: 80vw;
   max-width: 800px;
   padding: 0 1.5%;
-  min-width: fit-content;
   text-wrap: nowrap;
 }
 
@@ -83,7 +82,7 @@
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .work-experience-content {
     align-items: center;
   }
