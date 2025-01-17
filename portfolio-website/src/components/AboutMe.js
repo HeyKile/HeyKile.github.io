@@ -4,7 +4,8 @@ import './AboutMe.css';
 export default function AboutMe({ aboutMe, charsDisplayed, setCharsDisplayed, showContent }) {
 
   const [description, setDescription] = useState(undefined);
-  const [name, setName] = useState("");
+  const [name, setName] = useState("_");
+  const [nameDelay, setNameDelay] = useState(3);
 
   useEffect(() => {
     if (aboutMe && aboutMe.descriptionFilename) {
@@ -17,6 +18,14 @@ export default function AboutMe({ aboutMe, charsDisplayed, setCharsDisplayed, sh
 
   useEffect(() => {
     if (aboutMe && aboutMe.name) {
+      // delay before name display
+      if (nameDelay > 0) {
+        const interval = setInterval(() => {
+          setNameDelay(prev => prev - 1);
+        }, 750);
+        return () => clearInterval(interval);
+      }
+
       const interval = setInterval(() => {
         setCharsDisplayed(prevCharsDisplayed => {
           if (prevCharsDisplayed < aboutMe.name.length) {
@@ -29,8 +38,9 @@ export default function AboutMe({ aboutMe, charsDisplayed, setCharsDisplayed, sh
         });
       }, 100);
       return () => clearInterval(interval);
+
     }
-  }, [aboutMe]);
+  }, [nameDelay, aboutMe]);
   
   useEffect(() => {
     if (aboutMe && aboutMe.name) {
